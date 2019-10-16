@@ -1,7 +1,7 @@
 import React from "react"
 
 const styles = {
-	card: { width: "75%" }
+	card: window.innerWidth >= 575.98 ? { width: "75%" } : {}
 }
 
 const Education = () => {
@@ -10,8 +10,10 @@ const Education = () => {
 			<div className="ui raised orange centered card" style={styles.card}>
 				<div className="content">
 					<div className="header">Master of Science (MS), Computer Science</div>
+				</div>
+				<div className="extra content">
 					<div className="description">
-						Oregon State University, Corvallis, OR, Expected December 2019
+						Oregon State University, Corvallis, OR, Expected April 2020
 					</div>
 				</div>
 			</div>
@@ -20,6 +22,8 @@ const Education = () => {
 					<div className="header">
 						Bachelor of Technology (B. Tech), Information Technology
 					</div>
+				</div>
+				<div className="extra content">
 					<div className="description">
 						NMIMS University, Mumbai, India, August 2017
 					</div>
