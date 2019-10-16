@@ -1,6 +1,7 @@
 import React from "react"
 import PaletteIcon from "../icons/color-palette.png"
 import RoadTripIcon from "../icons/road-trip.png"
+import PortfolioIcon from "../icons/portfolio.png"
 
 const styles = {
 	icon: { height: "24px", width: "24px", marginRight: "10px" }
@@ -65,6 +66,37 @@ const Projects = () => {
 						<a
 							className="ui basic black button"
 							href="https://calm-badlands-76250.herokuapp.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Demo
+						</a>
+					</div>
+				</div>
+			</div>
+			<div className="ui centered card">
+				<div className="content">
+					<div className="header">
+						<img src={PortfolioIcon} style={styles.icon} />
+						Portfolio
+					</div>
+					<div className="left aligned description">
+						Ujjval's portfolio built as a single-page application using React.
+					</div>
+				</div>
+				<div className="extra content">
+					<div className="ui two buttons">
+						<a
+							className="ui basic blue button"
+							href="https://github.com/flashkicker/portfolio"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Github
+						</a>
+						<a
+							className="ui basic black button"
+							href="https://flashkicker.github.io"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
