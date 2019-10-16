@@ -1,13 +1,14 @@
 import React from "react"
 
-import GithubIcon from "./github.svg"
-import LinkedInIcon from "./linkedin.svg"
-import InstagramIcon from "./instagram.svg"
-import Face from "./moi.jpg"
+import GithubIcon from "../icons/github.svg"
+import LinkedInIcon from "../icons/linkedin.svg"
+import InstagramIcon from "../icons/instagram.svg"
+import Face from "../images/moi.jpg"
 
 const styles = {
 	list: { padding: "10px" },
-	icon: { height: "32px", width: "32px" }
+	icon: { height: "32px", width: "32px" },
+	email: { marginTop: "10px" }
 }
 
 const Left = () => {
@@ -19,7 +20,10 @@ const Left = () => {
 				src={Face}
 			/>
 			<h1>Ujjval Kumaria</h1>
-			<h3>kumariau@oregonstate.edu</h3>
+			<p className="ui orange label">
+				<em>Graduate Student at Oregon State University</em>
+			</p>
+			<h3 style={styles.email}>kumariau@oregonstate.edu</h3>
 			<div className="ui divider" />
 			<p>
 				Corvallis, OR{" "}

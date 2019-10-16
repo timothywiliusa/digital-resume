@@ -1,6 +1,6 @@
 import React from "react"
-import PaletteIcon from "./color-palette.png"
-import RoadTripIcon from "./road-trip.png"
+import PaletteIcon from "../icons/color-palette.png"
+import RoadTripIcon from "../icons/road-trip.png"
 
 const styles = {
 	icon: { height: "24px", width: "24px", marginRight: "10px" }
