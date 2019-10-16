@@ -10,7 +10,7 @@ const styles = {
 const Projects = () => {
 	return (
 		<div className="ui stackable raised cards">
-			<div className="ui centered card">
+			<div className="ui olive centered card">
 				<div className="content">
 					<div className="header">
 						<img src={PaletteIcon} style={styles.icon} alt="palette-icon" />
@@ -42,7 +42,7 @@ const Projects = () => {
 					</div>
 				</div>
 			</div>
-			<div className="ui centered card">
+			<div className="ui olive centered card">
 				<div className="content">
 					<div className="header">
 						<img src={RoadTripIcon} style={styles.icon} alt="road-trip-icon" />
@@ -74,7 +74,7 @@ const Projects = () => {
 					</div>
 				</div>
 			</div>
-			<div className="ui centered card">
+			<div className="ui olive centered card">
 				<div className="content">
 					<div className="header">
 						<img src={PortfolioIcon} style={styles.icon} alt="portfolio-icon" />

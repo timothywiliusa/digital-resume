@@ -4,7 +4,7 @@ class Experience extends Component {
 	render() {
 		return (
 			<div className="ui one cards">
-				<div className="ui yellow raised card">
+				<div className="ui olive raised card">
 					<div className="content">
 						<div className="left aligned header">
 							Graduate Student Instructor: CS 362
@@ -40,7 +40,7 @@ class Experience extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="ui green raised card">
+				<div className="ui olive raised card">
 					<div className="content">
 						<div className="left aligned header">
 							Graduate Research Assistant: Python Developer
@@ -67,7 +67,7 @@ class Experience extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="ui purple raised card">
+				<div className="ui olive raised card">
 					<div className="content">
 						<div className="left aligned header">
 							Graduate Research Assistant: Full-stack developer

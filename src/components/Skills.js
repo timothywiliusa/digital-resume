@@ -20,17 +20,18 @@ const SKILLS = [
 
 const styles = {
 	label: {
-		"& .ui.teal.labels .label:hover, a.ui.teal.label:hover": {
-			backgroundColor: "#00b5ad !important"
+		"& .ui.olive.labels .label:hover, a.ui.olive.label:hover": {
+			backgroundColor: "#b5cc18 !important"
 		}
-	}
+	},
+	span: { color: "black" }
 }
 
 class Skills extends Component {
 	renderSkills = () => {
 		return SKILLS.map(skill => (
 			<span key={skill} className="ui label">
-				{skill}
+				<span style={styles.span}>{skill}</span>
 			</span>
 		))
 	}
@@ -38,7 +39,7 @@ class Skills extends Component {
 	render() {
 		return (
 			<div className={this.props.classes.label}>
-				<div className="ui big teal labels">{this.renderSkills()}</div>
+				<div className="ui big olive labels">{this.renderSkills()}</div>
 			</div>
 		)
 	}

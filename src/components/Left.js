@@ -35,8 +35,8 @@ const Left = () => {
 				src={Face}
 			/>
 			<h1>Ujjval Kumaria</h1>
-			<div className="ui orange label">
-				<em>Graduate Student at Oregon State University</em>
+			<div className="ui olive label">
+				<span style={styles.span}>Graduate Student at Oregon State University</span>
 			</div>
 			<h3 style={styles.email}>kumariau@oregonstate.edu</h3>
 			<div className="ui divider" />
