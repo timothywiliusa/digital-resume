@@ -7,7 +7,10 @@ import Skills from "./Skills"
 import Education from "./Education"
 
 const styles = {
-	segment: window.innerWidth >= 575.98 ? {} : { paddingBottom: "50px" }
+	segment:
+		window.innerWidth >= 575.98
+			? {}
+			: { paddingBottom: "5rem" }
 }
 
 const Right = () => {

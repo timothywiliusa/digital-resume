@@ -13,7 +13,7 @@ const Projects = () => {
 			<div className="ui centered card">
 				<div className="content">
 					<div className="header">
-						<img src={PaletteIcon} style={styles.icon} />
+						<img src={PaletteIcon} style={styles.icon} alt="palette-icon" />
 						Colorati
 					</div>
 					<div className="left aligned description">
@@ -45,7 +45,7 @@ const Projects = () => {
 			<div className="ui centered card">
 				<div className="content">
 					<div className="header">
-						<img src={RoadTripIcon} style={styles.icon} />
+						<img src={RoadTripIcon} style={styles.icon} alt="road-trip-icon" />
 						Trippr
 					</div>
 					<div className="left aligned description">
@@ -77,7 +77,7 @@ const Projects = () => {
 			<div className="ui centered card">
 				<div className="content">
 					<div className="header">
-						<img src={PortfolioIcon} style={styles.icon} />
+						<img src={PortfolioIcon} style={styles.icon} alt="portfolio-icon" />
 						Portfolio
 					</div>
 					<div className="left aligned description">

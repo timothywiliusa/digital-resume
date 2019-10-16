@@ -8,12 +8,18 @@ import Face from "../images/moi.jpg"
 const styles = {
 	list: { padding: "10px" },
 	icon: { height: "32px", width: "32px" },
-	email: { marginTop: "10px" }
+	email: { marginTop: "10px" },
+	segment: { border: "1.5px solid", boxShadow: "7px 7px", paddingBottom: "0px" },
+	label: { borderRadius: "0px" },
+	span: { color: "black" }
 }
 
 const Left = () => {
 	return (
-		<div className="ui center aligned basic segment">
+		<div className="ui center aligned basic segment" style={styles.segment}>
+			<div className="ui top attached olive label" style={styles.label}>
+				<span style={styles.span}>Available April 2020</span>
+			</div>
 			<img
 				className="ui centered small circular image"
 				alt="Ujjval Kumaria"
