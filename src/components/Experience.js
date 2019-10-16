@@ -10,7 +10,7 @@ class Experience extends Component {
 							Graduate Student Instructor: CS 362
 						</div>
 						<div className="left aligned meta">
-							Oregon State University, April 2019 – Current
+							Oregon State University, April 2019 – August 2019
 						</div>
 						<div className="left aligned meta">
 							<em>

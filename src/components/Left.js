@@ -9,7 +9,11 @@ const styles = {
 	list: { padding: "10px" },
 	icon: { height: "32px", width: "32px" },
 	email: { marginTop: "10px" },
-	segment: { border: "1.5px solid", boxShadow: "7px 7px", paddingBottom: "0px" },
+	segment: {
+		border: "1.5px solid",
+		boxShadow: "5px 5px",
+		paddingBottom: "0px"
+	},
 	label: { borderRadius: "0px" },
 	span: { color: "black" }
 }
@@ -17,7 +21,12 @@ const styles = {
 const Left = () => {
 	return (
 		<div className="ui center aligned basic segment" style={styles.segment}>
-			<div className="ui top attached olive label" style={styles.label}>
+			<div
+				className={`ui ${
+					window.innerWidth >= 575.98 ? "top" : "bottom"
+				} attached olive label`}
+				style={styles.label}
+			>
 				<span style={styles.span}>Available April 2020</span>
 			</div>
 			<img
@@ -26,9 +35,9 @@ const Left = () => {
 				src={Face}
 			/>
 			<h1>Ujjval Kumaria</h1>
-			<p className="ui orange label">
+			<div className="ui orange label">
 				<em>Graduate Student at Oregon State University</em>
-			</p>
+			</div>
 			<h3 style={styles.email}>kumariau@oregonstate.edu</h3>
 			<div className="ui divider" />
 			<p>
