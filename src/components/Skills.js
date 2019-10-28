@@ -1,22 +1,6 @@
 import React, { Component } from "react"
 import { withStyles } from "@material-ui/styles"
-
-const SKILLS = [
-	"JavaScript",
-	"React",
-	"Redux",
-	"React Native",
-	"Node.js",
-	"MongoDB",
-	"ES6",
-	"REST APIs",
-	"TypeScript",
-	"GraphQL",
-	"Python",
-	"MySQL",
-	"TDD",
-	"Jest"
-]
+import { skillsInfo } from "../shared/Info"
 
 const styles = {
 	label: {
@@ -28,8 +12,8 @@ const styles = {
 }
 
 class Skills extends Component {
-	renderSkills = () => {
-		return SKILLS.map(skill => (
+	renderSkills = skillsInfo => {
+		return skillsInfo.map(skill => (
 			<span key={skill} className="ui label">
 				<span style={styles.span}>{skill}</span>
 			</span>
@@ -39,7 +23,9 @@ class Skills extends Component {
 	render() {
 		return (
 			<div className={this.props.classes.label}>
-				<div className="ui big olive labels">{this.renderSkills()}</div>
+				<div className="ui big olive labels">
+					{this.renderSkills(skillsInfo)}
+				</div>
 			</div>
 		)
 	}

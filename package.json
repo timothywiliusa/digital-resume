@@ -1,5 +1,5 @@
 {
-	"name": "portfolio",
+	"name": "digital-resume",
 	"version": "0.1.0",
 	"private": true,
 	"homepage": "http://flashkicker.github.io/",
@@ -13,6 +13,7 @@
 		"react-router-dom": "^5.1.2",
 		"react-scripts": "3.2.0",
 		"react-sticky": "^6.0.3",
+		"react-tooltip": "^3.11.1",
 		"semantic-ui-react": "^0.88.1"
 	},
 	"scripts": {

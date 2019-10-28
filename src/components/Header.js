@@ -45,7 +45,7 @@ class Header extends Component {
 				secondary={styles.secondary}
 				fluid
 				widths={4}
-				size={"huge"}
+				size={window.innerWidth >= 575.98 ? "huge" : "large"}
 			>
 				{this.renderMenuItems()}
 			</Menu>
