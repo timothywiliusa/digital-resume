@@ -32,7 +32,8 @@ export const projectInfo = [
 		description: `A web app for creating your own color palettes built entirely using
 		React.`,
 		github: "https://github.com/flashkicker/colorati",
-		demo: "https://colorati.herokuapp.com/"
+		demo: "https://colorati.herokuapp.com/",
+		meta: "*works better on larger screens"
 	},
 	{
 		title: "Trippr",

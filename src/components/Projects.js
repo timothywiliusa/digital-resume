@@ -8,16 +8,24 @@ const styles = {
 class Projects extends Component {
 	renderProjects = projectInfo => {
 		return projectInfo.map(project => {
-			const { title, icon, iconAlt, description, github, demo } = project
-	
+			const { title, icon, iconAlt, description, github, demo, meta } = project
+
 			return (
-				<div className="ui olive centered card">
+				<div className="ui olive centered card" key={title}>
 					<div className="content">
 						<div className="header">
 							<img src={icon} style={styles.icon} alt={iconAlt} />
 							{title}
 						</div>
 						<div className="left aligned description">{description}</div>
+						{meta ? (
+							<div>
+								<br />
+								<div className="left aligned meta">{meta}</div>
+							</div>
+						) : (
+							""
+						)}
 					</div>
 					<div className="extra content">
 						<div className="ui two buttons">
@@ -46,8 +54,10 @@ class Projects extends Component {
 
 	render() {
 		return (
-			<div className="ui stackable raised cards">
-				{this.renderProjects(projectInfo)}
+			<div>
+				<div className="ui stackable raised cards" style={{ marginTop: "40px" }}>
+					{this.renderProjects(projectInfo)}
+				</div>
 			</div>
 		)
 	}

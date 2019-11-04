@@ -16,7 +16,21 @@ class Right extends Component {
 			<div className="ui center aligned basic segment" style={styles.segment}>
 				<Route exact path="/" render={() => <Experience />} />
 				<Route exact path={"/experience"} render={() => <Experience />} />
-				<Route exact path={"/projects"} render={() => <Projects />} />
+				<Route
+					exact
+					path={"/projects"}
+					render={() => (
+						<div>
+							<div className="ui top attached small label">
+								<p>
+									Note: If you see an error related to Heroku when first loading
+									a demo, please try refreshing the page.
+								</p>
+							</div>
+							<Projects />
+						</div>
+					)}
+				/>
 				<Route exact path={"/skills"} render={() => <Skills />} />
 				<Route exact path={"/education"} render={() => <Education />} />
 			</div>
