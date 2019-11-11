@@ -2,6 +2,7 @@ import PaletteIcon from "../icons/color-palette.png"
 import RoadTripIcon from "../icons/road-trip.png"
 import ResumeIcon from "../icons/resume.png"
 import CryptopiumIcon from "../icons/cryptopium.png"
+import FeedbackIcon from "../icons/feedback-icon.png"
 
 export const personalInfo = {
 	name: "Ujjval Kumaria",
@@ -76,6 +77,14 @@ export const projectInfo = [
 		React.`,
 		github: "https://github.com/flashkicker/digital-resume",
 		demo: "https://flashkicker.github.io"
+	},
+	{
+		title: "FeedMe",
+		icon: FeedbackIcon,
+		iconAlt: "feedback-icon",
+		description: `A scalable full-stack web app that helps companies collect useful feedback from their users.`,
+		github: "https://github.com/flashkicker/FeedMe",
+		demo: "https://whispering-tundra-25800.herokuapp.com/"
 	}
 ]
 
