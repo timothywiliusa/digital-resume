@@ -7,9 +7,13 @@ import LinkedInIcon from "../icons/linkedin.svg"
 import InstagramIcon from "../icons/instagram.svg"
 import Face from "../images/moi.jpg"
 import DownloadResumeIcon from "../icons/download-resume.png"
+import { personalInfo } from "../shared/Info"
 
 const styles = {
-	list: { padding: "10px", marginBottom: window.innerWidth >= 575.98 ? "0px" : "30px" },
+	list: {
+		padding: "10px",
+		marginBottom: window.innerWidth >= 575.98 ? "0px" : "30px"
+	},
 	icon: { height: "32px", width: "32px" },
 	email: { marginTop: "10px" },
 	segment: {
@@ -24,11 +28,24 @@ const styles = {
 
 class Left extends Component {
 	state = {
-		value: "kumariau@oregonstate.edu",
+		value: personalInfo.email,
 		copied: false
 	}
 
 	render() {
+		const {
+			email,
+			name,
+			availability,
+			title,
+			location,
+			weatherEmoji,
+			emojiDescription,
+			bio,
+			githubUrl,
+			linkedInUrl,
+			instagramUrl
+		} = personalInfo
 		return (
 			<div className="ui center aligned basic segment" style={styles.segment}>
 				<div
@@ -37,64 +54,49 @@ class Left extends Component {
 					} attached olive label`}
 					style={styles.label}
 				>
-					<span style={styles.span}>Available April 2020</span>
+					<span style={styles.span}>{availability}</span>
 				</div>
 				<img
 					className="ui centered small circular image"
-					alt="Ujjval Kumaria"
+					alt={name}
 					src={Face}
 				/>
-				<h1>Ujjval Kumaria</h1>
+				<h1>{name}</h1>
 				<div className="ui olive label">
-					<span style={styles.span}>
-						Graduate Student at Oregon State University
-					</span>
+					<span style={styles.span}>{title}</span>
 				</div>
 
 				<CopyToClipboard
 					text={this.state.value}
 					onCopy={() => this.setState({ copied: true })}
 				>
-					<h4 style={styles.email} data-tip="Click to copy">kumariau@oregonstate.edu</h4>
+					<h4 style={styles.email} data-tip="Click to copy">
+						{email}
+					</h4>
 				</CopyToClipboard>
 				<div className="ui divider" />
 				<p style={styles.text}>
-					Corvallis, OR{" "}
-					<span role="img" aria-label="rain-emoji">
-						🌧️
+					{location}{" "}
+					<span role="img" aria-label={emojiDescription}>
+						{weatherEmoji}
 					</span>
 				</p>
-				<p style={styles.text}>
-					I am a full-stack developer, which means if you give me one more task
-					my stack will overflow.
-				</p>
+				<p style={styles.text}>{bio}</p>
 
 				<div className="item"></div>
 				<div className="ui horizontal list" style={styles.list}>
 					<div className="item">
-						<a
-							href="https://github.com/flashkicker"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href={githubUrl} target="_blank" rel="noopener noreferrer">
 							<img style={styles.icon} alt="github-icon" src={GithubIcon} />
 						</a>
 					</div>
 					<div className="item">
-						<a
-							href="https://www.linkedin.com/in/ujjval-kumaria-309a55124/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
 							<img style={styles.icon} alt="linkedin-icon" src={LinkedInIcon} />
 						</a>
 					</div>
 					<div className="item">
-						<a
-							href="https://www.instagram.com/flashkicker/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href={instagramUrl} target="_blank" rel="noopener noreferrer">
 							<img
 								style={styles.icon}
 								alt="instagram-icon"

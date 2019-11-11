@@ -2,6 +2,21 @@ import PaletteIcon from "../icons/color-palette.png"
 import RoadTripIcon from "../icons/road-trip.png"
 import ResumeIcon from "../icons/resume.png"
 
+export const personalInfo = {
+	name: "Ujjval Kumaria",
+	email: "kumariau@oregonstate.edu",
+	availability: "Available April 2020",
+	title: "Graduate Student at Oregon State University",
+	location: "Corvallis, OR",
+	weatherEmoji: "🌧️",
+	emojiDescription: "rain-emoji",
+	bio: `I am a full-stack developer, which means if you give me one more task
+	my stack will overflow.`,
+	githubUrl: "https://github.com/flashkicker",
+	linkedInUrl: "https://www.linkedin.com/in/ujjval-kumaria-309a55124/",
+	instagramUrl: "https://www.instagram.com/flashkicker/"
+}
+
 export const experienceInfo = [
 	{
 		title: "Graduate Student Instructor",
@@ -20,7 +35,7 @@ export const experienceInfo = [
 		title: "Graduate Research Assistant: Full-stack developer",
 		meta: "Oregon State University, Sep 2017 – June 2017",
 		description: `Developed a health analytics application that assists health
-		scientists conduct research studies.`
+		scientists with conducting research studies.`
 	}
 ]
 
