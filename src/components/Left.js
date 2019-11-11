@@ -82,8 +82,6 @@ class Left extends Component {
 					</span>
 				</p>
 				<p style={styles.text}>{bio}</p>
-
-				<div className="item"></div>
 				<div className="ui horizontal list" style={styles.list}>
 					<div className="item">
 						<a href={githubUrl} target="_blank" rel="noopener noreferrer">

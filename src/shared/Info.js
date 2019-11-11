@@ -1,6 +1,7 @@
 import PaletteIcon from "../icons/color-palette.png"
 import RoadTripIcon from "../icons/road-trip.png"
 import ResumeIcon from "../icons/resume.png"
+import CryptopiumIcon from "../icons/cryptopium.png"
 
 export const personalInfo = {
 	name: "Ujjval Kumaria",
@@ -40,6 +41,14 @@ export const experienceInfo = [
 ]
 
 export const projectInfo = [
+	{
+		title: "Cryptopium",
+		icon: CryptopiumIcon,
+		iconAlt: "cryptopium-icon",
+		description: `Cryptopium is a Financial Reporting App for cryptocurrencies built entirely on React. `,
+		github: "https://github.com/flashkicker/cryptopium",
+		demo: "https://cryptopium.herokuapp.com/"
+	},
 	{
 		title: "Colorati",
 		icon: PaletteIcon,
