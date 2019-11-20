@@ -36,7 +36,6 @@ class Left extends Component {
 		const {
 			email,
 			name,
-			availability,
 			title,
 			location,
 			weatherEmoji,
@@ -48,14 +47,6 @@ class Left extends Component {
 		} = personalInfo
 		return (
 			<div className="ui center aligned basic segment" style={styles.segment}>
-				<div
-					className={`ui ${
-						window.innerWidth >= 575.98 ? "top" : "bottom"
-					} attached olive label`}
-					style={styles.label}
-				>
-					<span style={styles.span}>{availability}</span>
-				</div>
 				<img
 					className="ui centered small circular image"
 					alt={name}

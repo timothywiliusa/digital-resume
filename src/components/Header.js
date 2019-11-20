@@ -14,6 +14,13 @@ class Header extends Component {
 		activeRoute: "experience"
 	}
 
+	componentDidMount() {
+		const { pathname } = this.props.location
+		this.setState({
+			activeRoute: pathname === "/" ? "experience" : pathname.slice(1)
+		})
+	}
+
 	handleRouteClick = (e, { name }) => {
 		this.setState({ activeRoute: name })
 		this.props.history.push(`/${name}`)
@@ -21,7 +28,7 @@ class Header extends Component {
 
 	renderMenuItems = () => {
 		const { activeRoute } = this.state
-
+		
 		return MENU_ITEMS.map(item => {
 			return (
 				<Menu.Item
