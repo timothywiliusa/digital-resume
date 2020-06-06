@@ -2,12 +2,12 @@ import React, { Component } from "react"
 import { projectInfo } from "../shared/Info"
 
 const styles = {
-	icon: { height: "24px", width: "24px", marginRight: "10px" }
+	icon: { height: "24px", width: "24px", marginRight: "10px" },
 }
 
 class Projects extends Component {
-	renderProjects = projectInfo => {
-		return projectInfo.map(project => {
+	renderProjects = (projectInfo) => {
+		return projectInfo.map((project) => {
 			const { title, icon, iconAlt, description, github, demo, meta } = project
 
 			return (
@@ -30,21 +30,23 @@ class Projects extends Component {
 					<div className="extra content">
 						<div className="ui two buttons">
 							<a
-								className="ui basic blue button"
+								className="ui basic black button"
 								href={github}
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								Github
 							</a>
-							<a
-								className="ui basic black button"
-								href={demo}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Demo
-							</a>
+							{demo && (
+								<a
+									className="ui basic blue button"
+									href={demo}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Live Demo
+								</a>
+							)}
 						</div>
 					</div>
 				</div>
@@ -55,7 +57,10 @@ class Projects extends Component {
 	render() {
 		return (
 			<div>
-				<div className="ui stackable raised cards" style={{ marginTop: "40px" }}>
+				<div
+					className="ui stackable raised cards"
+					style={{ marginTop: "40px" }}
+				>
 					{this.renderProjects(projectInfo)}
 				</div>
 			</div>

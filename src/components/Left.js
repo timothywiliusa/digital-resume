@@ -6,7 +6,7 @@ import GithubIcon from "../icons/github.svg"
 import LinkedInIcon from "../icons/linkedin.svg"
 import InstagramIcon from "../icons/instagram.svg"
 import Face from "../images/moi.jpg"
-import DownloadResumeIcon from "../icons/download-resume.png"
+// import DownloadResumeIcon from "../icons/download-resume.png"
 import { personalInfo } from "../shared/Info"
 
 const styles = {
@@ -93,7 +93,7 @@ class Left extends Component {
 							/>
 						</a>
 					</div>
-					<div className="item" data-tip="Download Resume">
+					{/* <div className="item" data-tip="Download Resume">
 						<a href="" target="_blank" rel="noopener noreferrer">
 							<img
 								style={styles.icon}
@@ -101,7 +101,7 @@ class Left extends Component {
 								src={DownloadResumeIcon}
 							/>
 						</a>
-					</div>
+					</div> */}
 				</div>
 				<ReactTooltip />
 			</div>
