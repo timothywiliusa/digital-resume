@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/digital-resume/static/js/main.8115bdab.chunk.js",
+    "main.js.map": "/digital-resume/static/js/main.8115bdab.chunk.js.map",
+    "runtime-main.js": "/digital-resume/static/js/runtime-main.73837f6d.js",
+    "runtime-main.js.map": "/digital-resume/static/js/runtime-main.73837f6d.js.map",
+    "static/js/2.7a86b220.chunk.js": "/digital-resume/static/js/2.7a86b220.chunk.js",
+    "static/js/2.7a86b220.chunk.js.map": "/digital-resume/static/js/2.7a86b220.chunk.js.map",
+    "index.html": "/digital-resume/index.html",
+    "precache-manifest.9698a77f0999173110f3c8698c140fe1.js": "/digital-resume/precache-manifest.9698a77f0999173110f3c8698c140fe1.js",
+    "service-worker.js": "/digital-resume/service-worker.js",
+    "static/media/github.svg": "/digital-resume/static/media/github.617870e4.svg",
+    "static/media/graphql-icon.png": "/digital-resume/static/media/graphql-icon.e7f32a3e.png",
+    "static/media/instagram.svg": "/digital-resume/static/media/instagram.662a4f14.svg",
+    "static/media/linkedin.svg": "/digital-resume/static/media/linkedin.619231ff.svg",
+    "static/media/moi.jpg": "/digital-resume/static/media/moi.7be1db90.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73837f6d.js",
+    "static/js/2.7a86b220.chunk.js",
+    "static/js/main.8115bdab.chunk.js"
+  ]
+}
