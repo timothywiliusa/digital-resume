@@ -1,14 +1,14 @@
-import React, { Component } from "react"
-import { projectInfo } from "../shared/Info"
+import React, { Component } from 'react';
+import { projectInfo } from '../shared/Info';
 
 const styles = {
-	icon: { height: "24px", width: "24px", marginRight: "10px" },
-}
+	icon: { height: '24px', width: '24px', marginRight: '10px' }
+};
 
 class Projects extends Component {
 	renderProjects = (projectInfo) => {
 		return projectInfo.map((project) => {
-			const { title, icon, iconAlt, description, github, demo, meta } = project
+			const { title, icon, iconAlt, description, github, demo, meta } = project;
 
 			return (
 				<div className="ui olive centered card" key={title}>
@@ -24,7 +24,7 @@ class Projects extends Component {
 								<div className="left aligned meta">{meta}</div>
 							</div>
 						) : (
-							""
+							''
 						)}
 					</div>
 					<div className="extra content">
@@ -50,22 +50,19 @@ class Projects extends Component {
 						</div>
 					</div>
 				</div>
-			)
-		})
-	}
+			);
+		});
+	};
 
 	render() {
 		return (
 			<div>
-				<div
-					className="ui stackable raised cards"
-					style={{ marginTop: "40px" }}
-				>
+				<div className="ui stackable raised cards" style={{ marginTop: '40px' }}>
 					{this.renderProjects(projectInfo)}
 				</div>
 			</div>
-		)
+		);
 	}
 }
 
-export default Projects
+export default Projects;

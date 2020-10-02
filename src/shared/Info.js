@@ -1,154 +1,86 @@
-import PaletteIcon from "../icons/color-palette.png"
-import RoadTripIcon from "../icons/road-trip.png"
-import ResumeIcon from "../icons/resume.png"
-import CryptopiumIcon from "../icons/cryptopium.png"
-import FeedbackIcon from "../icons/feedback-icon.png"
-import GraphQLIcon from "../icons/graphql-icon.png"
-import ChatIcon from "../icons/chat-icon.png"
-import TrackrIcon from "../icons/trackr-icon.png"
+import PaletteIcon from '../icons/color-palette.png';
+import CryptopiumIcon from '../icons/cryptopium.png';
+import GraphQLIcon from '../icons/graphql-icon.png';
+import TrackrIcon from '../icons/trackr-icon.png';
 
 export const personalInfo = {
-	name: "Ujjval Kumaria",
-	email: "ujjkumaria@gmail.com",
-	// availability: "Available April 2020",
-	title: "Full Stack Developer at HazAdapt, INC.",
-	location: "Corvallis, OR",
-	weatherEmoji: "🌧️",
-	emojiDescription: "rain-emoji",
-	bio: `I am a full stack developer, which means if you give me one more task
-	my stack will overflow.`,
-	githubUrl: "https://github.com/flashkicker",
-	linkedInUrl: "https://www.linkedin.com/in/ujjvalkumaria",
-	instagramUrl: "https://www.instagram.com/flashkicker/",
-}
+	name: 'Timothy Wiliusa',
+	email: 'wiliusat@oregonstate.edu',
+	title: 'Full Stack Developer',
+	location: 'Corvallis, OR',
+	weatherEmoji: '☀️',
+	emojiDescription: 'sun-emoji',
+	bio: 'Senior at Oregon State University',
+	githubUrl: 'https://github.com/timothywilliusa',
+	linkedInUrl: 'https://www.linkedin.com/in/timothy-wiliusa-13317418b/',
+	instagramUrl: 'https://www.instagram.com/ti.m.o.th.y/'
+};
 
 export const experienceInfo = [
 	{
-		title: "Full Stack Developer",
-		meta: "HazAdapt, INC., April 2020 - Current",
+		title: 'Full Stack Developer',
+		meta: 'HazAdapt, INC., April 2020 - Current',
 		description:
-			"Helped design system architecture, developed a cross-platform React Native app and mentored a student developer",
-	},
-	{
-		title: "Instructor",
-		meta: "Oregon State University, April 2019 – August 2019",
-		description: `Delivered instructions and guided two graduate TAs, on software testing methods, coverage, debugging, maintenance practices, etc.`,
-	},
-	{
-		title: "Graduate Research Assistant: Python Developer",
-		meta: "Oregon State University, June 2018 – Sept 2018",
-		description:
-			"Worked on the NCATS Biomedical Translator Software Reasoning Tool.",
-	},
-	{
-		title: "Graduate Research Assistant: Full-stack developer",
-		meta: "Oregon State University, Sep 2017 – June 2017",
-		description: `Developed a health analytics application that assists health
-		scientists with conducting research studies.`,
-	},
-]
+			'Helped design system architecture, developed a cross-platform React Native app and mentored a student developer'
+	}
+];
 
 export const projectInfo = [
 	{
-		title: "Colorati",
-		icon: PaletteIcon,
-		iconAlt: "palette-icon",
-		description: `A web app for creating and managing your own color palettes built entirely using
-		React.`,
-		github: "https://github.com/flashkicker/colorati",
-		demo: "https://colorati.herokuapp.com/",
-		meta: "*works better on larger screens",
-	},
-	{
-		title: "Cryptopium",
+		title: 'Conduct',
 		icon: CryptopiumIcon,
-		iconAlt: "cryptopium-icon",
-		description: `A financial reporting web app for cryptocurrencies, integrated with charts and APIs for graphing historical data and real-time crypto pricing data.`,
-		github: "https://github.com/flashkicker/cryptopium",
-		demo: "https://cryptopium.herokuapp.com/",
-	},
-	{
-		title: "Blogs GraphQL API",
-		icon: GraphQLIcon,
-		iconAlt: "graphql-icon",
-		description: `A fully-functional, production-ready, GraphQL API built on Node and Prisma.`,
-		github: "https://github.com/flashkicker/blogs-api",
-		demo: "https://ancient-beyond-25685.herokuapp.com/",
-	},
-	{
-		title: "Trackr",
-		icon: TrackrIcon,
-		iconAlt: "trackr-icon",
+		iconAlt: 'conduct',
 		description:
-			"Cross-platform mobile app that lets users track and record runs, hikes and roadtrips on a map in realtime.",
-		github: "https://github.com/flashkicker/trackr-app",
-		demo: "https://expo.io/@flashkicker/trackr",
+			'On-going task management application for companies. Assigning tasks, keeping track of work, and sending messages between users.',
+		github: 'https://github.com/timothywiliusa/conduct'
 	},
 	{
-		title: "Trippr",
-		icon: RoadTripIcon,
-		iconAlt: "road-trip-icon",
-		description: `An interactive web application that helps users explore and save popular road trips created by other community members.`,
-		github: "https://github.com/flashkicker/Trippr",
-		demo: "https://calm-badlands-76250.herokuapp.com",
+		title: 'Monsters Rolodex',
+		icon: GraphQLIcon,
+		iconAlt: 'monster',
+		description: 'Simple React application where I learn to filter and map state objects.',
+		github: 'https://github.com/timothywiliusa/monsters-rolodex',
+		demo: 'https://timothywiliusa.github.io/monsters-rolodex/'
 	},
 	{
-		title: "Digital Resume",
-		icon: ResumeIcon,
-		iconAlt: "resume-icon",
-		description: `Ujjval's digital resume built as a single-page application using
-		React.`,
-		github: "https://github.com/flashkicker/digital-resume",
-		demo: "https://flashkicker.github.io",
+		title: 'Space Shop',
+		icon: TrackrIcon,
+		iconAlt: 'spaceship',
+		description:
+			'With my CS 340 group, we built an e-comerce online applicaiton for virtual users to buy and sell merchendises. Using SQL tables and mariaDB.',
+		github: 'https://github.com/timothywiliusa/cs340-group19-new'
 	},
 	{
-		title: "FeedMe",
-		icon: FeedbackIcon,
-		iconAlt: "feedback-icon",
-		description: `A MERN-based feedback-collector application for businesses that send mass interactive emails and collects feedback through webhooks.`,
-		github: "https://github.com/flashkicker/FeedMe",
-		demo: "https://whispering-tundra-25800.herokuapp.com/",
-	},
-	{
-		title: "ChatKube",
-		icon: ChatIcon,
-		iconAlt: "chat-icon",
-		description: `Basic chat application built using Node, Vanilla JS and Socket.io with support for chat rooms`,
-		github: "https://github.com/flashkicker/chatkube",
-		demo: "http://chatkube.herokuapp.com/",
-	},
-]
+		title: 'Aces Up Game',
+		icon: PaletteIcon,
+		iconAlt: 'cards',
+		description: 'Aces Up game from the CS 361 class.',
+		github: 'https://github.com/cs361f2019-osu/Fall2019_project-twosums'
+	}
+];
 
 export const skillsInfo = [
-	"JavaScript",
-	"React",
-	"Redux",
-	"React Native",
-	"Node.js",
-	"GraphQL",
-	"Prisma",
-	"MongoDB",
-	"ES6",
-	"REST APIs",
-	"Socker.io",
-	"Python",
-	"SQL",
-	"Test Driven Development",
-	"Jest",
-	"Semantic UI",
-	"Responsive Design",
-	"Git",
-	"Agile",
-	"SCRUM",
-]
+	'Time Management',
+	'Agile',
+	'SCRUM',
+	'JavaScript',
+	'React',
+	'Redux',
+	'Node.js',
+	'GraphQL',
+	'MongoDB',
+	'REST APIs',
+	'SQL',
+	'Semantic UI',
+	'Responsive Design',
+	'Git',
+	'GenderMag',
+	'Python'
+];
 
 export const educationInfo = [
 	{
-		title: "Master of Science (MS), Computer Science",
-		description: "Oregon State University, Corvallis, OR, April 2020",
-	},
-	{
-		title: "Bachelor of Technology (B. Tech), Information Technology",
-		description: "NMIMS University, Mumbai, India, August 2017",
-	},
-]
+		title: '4th year Computer Science Major, with focus on Human-Computer Interactions',
+		description: 'Oregon State University, Corvallis, OR'
+	}
+];
