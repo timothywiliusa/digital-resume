@@ -1,7 +1,7 @@
-import PaletteIcon from '../icons/color-palette.png';
-import CryptopiumIcon from '../icons/cryptopium.png';
-import GraphQLIcon from '../icons/graphql-icon.png';
-import TrackrIcon from '../icons/trackr-icon.png';
+import Ace from '../icons/ace.png';
+import Conduct from '../icons/letter-c.png';
+import Monster from '../icons/monster.png';
+import Shuttle from '../icons/shuttle.png';
 
 export const personalInfo = {
 	name: 'Timothy Wiliusa',
@@ -28,7 +28,7 @@ export const experienceInfo = [
 export const projectInfo = [
 	{
 		title: 'Conduct',
-		icon: CryptopiumIcon,
+		icon: Conduct,
 		iconAlt: 'conduct',
 		description:
 			'On-going task management application for companies. Assigning tasks, keeping track of work, and sending messages between users.',
@@ -36,15 +36,14 @@ export const projectInfo = [
 	},
 	{
 		title: 'Monsters Rolodex',
-		icon: GraphQLIcon,
+		icon: Monster,
 		iconAlt: 'monster',
 		description: 'Simple React application where I learn to filter and map state objects.',
-		github: 'https://github.com/timothywiliusa/monsters-rolodex',
-		demo: 'https://timothywiliusa.github.io/monsters-rolodex/'
+		github: 'https://github.com/timothywiliusa/monsters-rolodex'
 	},
 	{
 		title: 'Space Shop',
-		icon: TrackrIcon,
+		icon: Shuttle,
 		iconAlt: 'spaceship',
 		description:
 			'With my CS 340 group, we built an e-comerce online applicaiton for virtual users to buy and sell merchendises. Using SQL tables and mariaDB.',
@@ -52,7 +51,7 @@ export const projectInfo = [
 	},
 	{
 		title: 'Aces Up Game',
-		icon: PaletteIcon,
+		icon: Ace,
 		iconAlt: 'cards',
 		description: 'Aces Up game from the CS 361 class.',
 		github: 'https://github.com/cs361f2019-osu/Fall2019_project-twosums'

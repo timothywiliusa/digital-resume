@@ -1,36 +1,36 @@
-import React, { Component } from "react"
-import ReactTooltip from "react-tooltip"
-import { CopyToClipboard } from "react-copy-to-clipboard"
+import React, { Component } from 'react';
+import ReactTooltip from 'react-tooltip';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-import GithubIcon from "../icons/github.svg"
-import LinkedInIcon from "../icons/linkedin.svg"
-import InstagramIcon from "../icons/instagram.svg"
-import Face from "../images/moi.jpg"
+import GithubIcon from '../icons/github.svg';
+import LinkedInIcon from '../icons/linkedin.svg';
+import InstagramIcon from '../icons/instagram.svg';
+import Face from '../images/moi.jpg';
 // import DownloadResumeIcon from "../icons/download-resume.png"
-import { personalInfo } from "../shared/Info"
+import { personalInfo } from '../shared/Info';
 
 const styles = {
 	list: {
-		padding: "10px",
-		marginBottom: window.innerWidth >= 575.98 ? "0px" : "30px"
+		padding: '10px',
+		marginBottom: window.innerWidth >= 575.98 ? '0px' : '30px'
 	},
-	icon: { height: "32px", width: "32px" },
-	email: { marginTop: "10px" },
+	icon: { height: '32px', width: '32px' },
+	email: { marginTop: '10px' },
 	segment: {
-		border: "1.5px solid",
-		boxShadow: "5px 5px",
-		paddingBottom: "0px"
+		border: '1.5px solid',
+		boxShadow: '5px 5px',
+		paddingBottom: '0px'
 	},
-	label: { borderRadius: "0px" },
-	span: { color: "black" },
-	text: { fontWeight: "700" }
-}
+	label: { borderRadius: '0px' },
+	span: { color: 'black' },
+	text: { fontWeight: '700' }
+};
 
 class Left extends Component {
 	state = {
 		value: personalInfo.email,
 		copied: false
-	}
+	};
 
 	render() {
 		const {
@@ -44,30 +44,23 @@ class Left extends Component {
 			githubUrl,
 			linkedInUrl,
 			instagramUrl
-		} = personalInfo
+		} = personalInfo;
 		return (
 			<div className="ui center aligned basic segment" style={styles.segment}>
-				<img
-					className="ui centered small circular image"
-					alt={name}
-					src={Face}
-				/>
+				<img className="ui centered small circular image" alt={name} src={Face} />
 				<h1>{name}</h1>
 				<div className="ui olive label">
 					<span style={styles.span}>{title}</span>
 				</div>
 
-				<CopyToClipboard
-					text={this.state.value}
-					onCopy={() => this.setState({ copied: true })}
-				>
+				<CopyToClipboard text={this.state.value} onCopy={() => this.setState({ copied: true })}>
 					<h4 style={styles.email} data-tip="Click to copy">
 						{email}
 					</h4>
 				</CopyToClipboard>
 				<div className="ui divider" />
 				<p style={styles.text}>
-					{location}{" "}
+					{location}{' '}
 					<span role="img" aria-label={emojiDescription}>
 						{weatherEmoji}
 					</span>
@@ -86,11 +79,7 @@ class Left extends Component {
 					</div>
 					<div className="item">
 						<a href={instagramUrl} target="_blank" rel="noopener noreferrer">
-							<img
-								style={styles.icon}
-								alt="instagram-icon"
-								src={InstagramIcon}
-							/>
+							<img style={styles.icon} alt="instagram-icon" src={InstagramIcon} />
 						</a>
 					</div>
 					{/* <div className="item" data-tip="Download Resume">
@@ -105,8 +94,8 @@ class Left extends Component {
 				</div>
 				<ReactTooltip />
 			</div>
-		)
+		);
 	}
 }
 
-export default Left
+export default Left;
